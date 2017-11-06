@@ -1,0 +1,42 @@
+#splash {
+  width: 100%;
+  height: 100vh;
+  background-image: url(/imgs/IMG_4004.jpg);
+  background-size: cover;
+  text-align: center;
+  padding-top: 40vh;
+  color: white;
+}
+
+#splashText {
+  text-align: center;
+  color: white;
+  background: black;
+  height: 200px;
+}
+
+#splashText p {
+  margin: 0px;
+}
+
+
+
+#adventure {
+  width: 50%;
+  float: left;
+}
+
+#projects {
+  width: 50%;
+  float: right;
+}
+
+#photography {
+  width: 50%;
+  float: left;
+}
+
+#about {
+  width: 50%;
+  float: right;
+}
