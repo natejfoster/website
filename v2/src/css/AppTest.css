@@ -1,0 +1,33 @@
+.bounding {
+  width: 400px;
+  height: 400px;
+  border: solid black 1px;
+}
+
+a.imageBlock {
+  color: white;
+  display: block;
+  background-color: black;
+}
+
+.imageBlock {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  color: white;
+  background-color: black;
+}
+
+.imageBlock:hover {
+  opacity: .75;
+}
+
+/* Centered text */
+h3.centered {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
