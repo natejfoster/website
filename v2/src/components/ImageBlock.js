@@ -1,11 +1,17 @@
 import React from 'react';
 
 const ImageBlock = (props) => {
+  var style = {
+    backgroundImage: 'url(' + props.image + ')',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover'
+  };
+
   return (
-    <div key={props.text} className='imageBlock'>
+    <div key={props.text} className='imageBlock' style={style}>
       <a href={props.url}>
-          <img className='background' src={props.image} alt='temp' isvertical={props.isVertical} />
-          <h3 className='centered'>{props.text}</h3>
+          <h3 className='test'>{props.text}</h3>
       </a>
     </div>
   )

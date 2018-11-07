@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import './css/AppTest.css';
-import ImageBlock from './components/ImageBlockTEST';
+import ImageBlock from './components/ImageBlock';
 
 class AppTest extends Component {
   render() {

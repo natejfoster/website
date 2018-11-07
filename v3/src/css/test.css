@@ -5,7 +5,7 @@
 }
 
 .splash {
-  background-image: url('/imgs/IMG_4004.jpg');
+  background-image: url('../images/IMG_4004.jpg');
   background-size:cover;
   background-position:center center;
   background-repeat:no-repeat;
@@ -13,7 +13,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-family: 'Stalemate', cursive;
+  font-family: 'Stalemate', cursive !important;
   font-size: 150%;
 }
 

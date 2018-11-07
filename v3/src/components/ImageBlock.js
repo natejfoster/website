@@ -11,10 +11,11 @@ const ImageBlock = (props) => {
   return (
     <div key={props.text} className='imageBlock' style={style}>
       <a href={props.url}>
-          <h3 className='centered'>{props.text}</h3>
+          <h3 className='test'>{props.text}</h3>
       </a>
     </div>
   )
 }
  
 export default ImageBlock;
+
