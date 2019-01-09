@@ -1,47 +1,39 @@
 import React from 'react'
-import { graphql } from 'gatsby'
-
+import { Link, graphql } from 'gatsby'
 import Layout from '../components/layout'
-import styled from 'styled-components'
-import Img from 'gatsby-image';
 
-const Journal = (props) => (
-  <Layout>
-    <div>SOME CONTENT</div>  
-  </Layout>
-)
+const Journal = (props) => {
+  const postList = props.data.allMarkdownRemark;
+  return (
+    <Layout>
+      {postList.edges.map(({ node }, i) => (
+        <Link to={node.frontmatter.path} key={i} className="link" >
+          <div className="post-list">
+            <h1>{node.frontmatter.title}</h1>
+            <span>{node.frontmatter.date}</span>
+            <p>{node.excerpt}</p>
+          </div>
+        </Link>
+      ))}
+    </Layout>
+  )
+}
 
-export default Journal
+export default Journal;
 
-// export const fluidImage = graphql`
-// fragment fluidImage on File {
-//   childImageSharp {
-//     fluid(maxWidth: 1240) {
-//       ...GatsbyImageSharpFluid
-//     }
-//   }
-// }
-// `;
-
-export const pageQuery = graphql`
-  query {
-    imageOne: file(relativePath: { eq: "IMG_4004.jpg" }) {
-      ...fluidImage
+export const listQuery = graphql`
+  query ListQuery {
+    allMarkdownRemark(filter: { fields: {collection: { eq: "journal" }}}) {
+      edges {
+        node {
+          excerpt(pruneLength: 250)
+          frontmatter {
+            date(formatString: "MMMM Do YYYY")
+            title
+            path
+          }
+        }
+      }
     }
   }
 `
-
-const Splash = styled.div`
-  position: relative;
-  height: 100vh;
-
-`;
-
-const imageStyle = {
-  position: "absolute",
-  left: 0,
-  top: 0,
-  width: "100%",
-  height: "100vh",
-  zIndex: -1
-}

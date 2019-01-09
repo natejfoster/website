@@ -2,26 +2,14 @@ import React from 'react'
 import { graphql } from 'gatsby'
 
 import Layout from '../components/layout'
-import styled from 'styled-components'
-import Img from 'gatsby-image';
 
 const Photography = (props) => (
   <Layout>
-    <div>SOME CONTENT</div>  
+    <div>Coming Soon!</div>  
   </Layout>
 )
 
 export default Photography
-
-// export const fluidImage = graphql`
-// fragment fluidImage on File {
-//   childImageSharp {
-//     fluid(maxWidth: 1240) {
-//       ...GatsbyImageSharpFluid
-//     }
-//   }
-// }
-// `;
 
 export const pageQuery = graphql`
   query {
@@ -30,18 +18,3 @@ export const pageQuery = graphql`
     }
   }
 `
-
-const Splash = styled.div`
-  position: relative;
-  height: 100vh;
-
-`;
-
-const imageStyle = {
-  position: "absolute",
-  left: 0,
-  top: 0,
-  width: "100%",
-  height: "100vh",
-  zIndex: -1
-}

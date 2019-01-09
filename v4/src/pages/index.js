@@ -1,9 +1,9 @@
 import React from 'react'
-import { Link, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 import ImageCard from '../components/imageCard'
 import HomeLayout from '../components/homeLayout'
 import styled from 'styled-components'
-import Img from 'gatsby-image';
+import Img from 'gatsby-image'
 
 const IndexPage = (props) => (
   <HomeLayout>
@@ -37,16 +37,6 @@ const IndexPage = (props) => (
 
 export default IndexPage
 
-export const fluidImage = graphql`
-  fragment fluidImage on File {
-    childImageSharp {
-      fluid(maxWidth: 1240) {
-        ...GatsbyImageSharpFluid
-      }
-    }
-  }
-`;
-
 export const pageQuery = graphql`
   query {
     imageSplash: file(relativePath: { eq: "IMG_4004.jpg" }) {
@@ -75,11 +65,11 @@ const Splash = styled.div`
   font-family: 'Stalemate', cursive !important;
   font-size: 150%;
   position: relative;
-`;
+`
 
 const ImageWrapper = styled.div`
   position: relative;
-`;
+`
 
 const imageStyle = {
   position: "absolute",

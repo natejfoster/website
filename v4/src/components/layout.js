@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
+import styled from 'styled-components'
 import Header from '../components/header'
 import favicon from '../images/favicon.ico'
 
@@ -33,9 +34,11 @@ const Layout = ({ children }) => (
           <html lang="en" />
         </Helmet>
         <Header siteTitle={data.site.siteMetadata.title} />
-        <div>
-          {children}
-        </div>
+        <Container>
+          <Content>
+            {children}
+          </Content>
+        </Container>
       </>
     )}
   />
@@ -46,3 +49,25 @@ Layout.propTypes = {
 }
 
 export default Layout
+
+const Container = styled.div`
+  margin-top: 100px;
+`
+
+const Content = styled.div`
+  background: white;
+  max-width: 740px;
+  margin: 0 auto;
+  padding: 20px;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 1.58;
+  letter-spacing: -.003em;
+
+  @media (max-width: 767px){
+    font-size: 18px;
+    line-height: 1.58;
+    letter-spacing: -.004em;
+  }
+`
