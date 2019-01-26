@@ -2,6 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import ImageCard from '../components/imageCard'
 import HomeLayout from '../components/homeLayout'
+import Footer from '../components/footer'
 import styled from 'styled-components'
 import Img from 'gatsby-image'
 
@@ -32,6 +33,7 @@ const IndexPage = (props) => (
         <Img fluid={props.data.imageJournal.childImageSharp.fluid} style={imageStyle} />
       </ImageWrapper>
     </div>
+    <Footer />
   </HomeLayout>
 )
 

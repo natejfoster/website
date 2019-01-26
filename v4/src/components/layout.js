@@ -4,6 +4,7 @@ import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
 import Header from '../components/header'
+import Footer from '../components/footer'
 import favicon from '../images/favicon.ico'
 
 import '../css/layout.css'
@@ -39,6 +40,7 @@ const Layout = ({ children }) => (
             {children}
           </Content>
         </Container>
+        <Footer />
       </>
     )}
   />
@@ -52,6 +54,7 @@ export default Layout
 
 const Container = styled.div`
   margin-top: 100px;
+  min-height: calc(100vh - 200px);
 `
 
 const Content = styled.div`

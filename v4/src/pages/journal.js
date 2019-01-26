@@ -1,25 +1,41 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
 import Layout from '../components/layout'
+import styled from 'styled-components'
+import Img from 'gatsby-image'
 
 const Journal = (props) => {
   const postList = props.data.allMarkdownRemark;
   return (
     <Layout>
       {postList.edges.map(({ node }, i) => (
-        <Link to={node.frontmatter.path} key={i} className="link" >
-          <div className="post-list">
-            <h1>{node.frontmatter.title}</h1>
-            <span>{node.frontmatter.date}</span>
-            <p>{node.excerpt}</p>
-          </div>
-        </Link>
+        <PostLink to={node.frontmatter.path} key={i}>
+          <PostItem>
+            <Img sizes={node.frontmatter.featuredImage.childImageSharp.sizes} />
+            <h3>{node.frontmatter.title}</h3>
+          </PostItem>
+        </PostLink>
       ))}
     </Layout>
   )
 }
 
 export default Journal;
+
+const PostLink = styled(Link)`
+  text-decoration: none;
+  color: black;
+`;
+
+const PostItem = styled.div`
+  text-align: center;
+  border: solid gainsboro 1px;
+  padding: 15px;
+  margin-bottom: 20px;
+  :hover {
+    background-color: whitesmoke;
+  }
+`;
 
 export const listQuery = graphql`
   query ListQuery {
@@ -31,6 +47,13 @@ export const listQuery = graphql`
             date(formatString: "MMMM Do YYYY")
             title
             path
+            featuredImage { 
+              childImageSharp{
+                  sizes(maxWidth: 750) {
+                      ...GatsbyImageSharpSizes
+                  }
+              }
+            }
           }
         }
       }

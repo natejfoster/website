@@ -1,17 +1,19 @@
 import React from 'react';
 import Layout from '../components/layout';
+import Img from 'gatsby-image';
 import { graphql } from 'gatsby';
 
 const BlogPost = (props) => {
-  console.log(props);
-return (
-  <Layout>
-    <div>
-      <h1>{props.data.markdownRemark.frontmatter.title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }} />
-    </div>
-  </Layout>
-)
+  const node = props.data.markdownRemark;
+  return (
+    <Layout>
+      <div>
+        <Img sizes={node.frontmatter.featuredImage.childImageSharp.sizes} />
+        <h1>{node.frontmatter.title}</h1>
+        <div dangerouslySetInnerHTML={{ __html: node.html }} />
+      </div>
+    </Layout>
+  )
 }
 
 export default BlogPost
@@ -24,6 +26,13 @@ export const pageQuery = graphql`
         title
         description
         path
+        featuredImage { 
+          childImageSharp{
+              sizes(maxWidth: 750) {
+                  ...GatsbyImageSharpSizes
+              }
+          }
+        }
       }
     }
   }

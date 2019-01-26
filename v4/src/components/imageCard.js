@@ -7,7 +7,7 @@ const ImageBlock = (props) => {
   return (
     <Block key={props.text} className='imageBlock'>
       <StyledLink to={props.url}>
-          <h3 className='test'>{props.text}</h3>
+          <h3 className='imageCard'>{props.text}</h3>
       </StyledLink>
     </Block>
   )

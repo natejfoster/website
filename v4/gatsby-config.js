@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/website",
   siteMetadata: {
     title: 'Nathan J Foster',
   },
@@ -25,9 +26,30 @@ module.exports = {
         name: "projects",
       }
     },
-    `gatsby-transformer-remark`,
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              noInlineHighlight: true,
+            },
+          },
+          {
+            resolve: `gatsby-remark-relative-images`,
+          },
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 750,
+            },
+          },
+        ],
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
