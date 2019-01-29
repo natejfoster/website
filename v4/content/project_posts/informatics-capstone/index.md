@@ -38,7 +38,13 @@ Waypoint was built on the premise that good tools rely on good data. Knowing tha
 
 
 ## My Part
-Well that sounds cool and all, but you might be thinking "What exactly did you do, Nathan?"
+Well that sounds cool and all, but you might be thinking "What exactly did you do, Nathan?" My role on the team for this project was Designer and Frontend Dev, so in a way, what you see is what I did. Granted, there is more to design and frontend development than just making things look pretty. It's also a matter of knowing the data, working with it, and presenting it in a way that is useful. 
+
+### Tech I Used
+As this project was sponsored by non-profits, working with open source technologies was crucial. To such end, I leveraged the following libraries to implement the functionality of the web app.
+- Material UI
+- Leaflet
+- React
 
 ![](./roadmap.png)
 *Illuminating the path between the dreams of today and the healthcare of tomorrow*
