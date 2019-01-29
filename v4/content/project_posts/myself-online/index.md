@@ -5,6 +5,8 @@ date: '2019-01-16'
 featuredImage: './website-v4.png'
 ---
 
+Part of being a web developer, slash photographer, slash self-proclaimed adventurer in the times of the interwebs is having and maintaining a personal website. I decided to take it a step further, and document the process that led me to the creation of my very own. This is that story.
+
 ## The OG, V0
 My very first website! Not the first website I had ever built, but the first one that was all about me. Built as a project for my front-end web development class, the goal was to apply the technologies we had learned and build a personal portfolio site that we could host on GitHub Pages. 
 

@@ -24,7 +24,10 @@ export default Projects;
 
 export const projectQuery = graphql`
   query ProjectQuery {
-    allMarkdownRemark(filter: { fields: {collection: { eq: "projects" }}}) {
+    allMarkdownRemark(
+      filter: { fields: {collection: { eq: "projects" }}}
+      sort: {fields: [frontmatter___date], order: DESC }
+    ) {
       edges {
         node {
           frontmatter {

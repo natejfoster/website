@@ -1,12 +1,11 @@
 ---
 title: "UW Informatics Capstone"
 path: "/projects/informatics-capstone"
-description: This post is related to the gatsbyjs
-date: '2018-09-26'
+date: '2019-01-10'
 featuredImage: './logo.png'
 ---
 
-The culmination of the Informatics program at the University of Washigton is a two-quarter capstone project. Students form teams of up to four and either create an original idea or partner with a sponsoring organization to complete a project. 
+The culmination of the Informatics program at the University of Washington is a two-quarter capstone project. Students form teams of up to four and either create an original idea or partner with a sponsoring organization to complete a project. 
 
 
 ## Waypoint
@@ -25,20 +24,24 @@ Over the next decades the School of Medicine would create the **WWAMI initiative
 
 ### Enter Waypoint
 
-Waypoint offers students and partnering organizations a simple information hub for finding and connecting with outreach programs. No longer do students risk the chance of not continuing their involment, and no longer do organizations have to jump through hurdles just to connect and collaborate with similar offerings in their area of operation.
+Waypoint offers students and partnering organizations a simple information hub for finding and connecting with outreach programs. No longer do students risk the chance of not continuing their involvement, and no longer do organizations have to jump through hurdles just to connect and collaborate with similar offerings in their area of operation.
 
 
 ### Process as a Product
 
-The data that fuels Waypoint was created practically from scratch. We designed a method of data collection for the WWAMI Inititiave that enables them to collect clean, extensive information for an ever growing number of outreach programs. As more organizations provide this information, Waypoint will provide a greater wealth of information.
+The data that fuels Waypoint was created practically from scratch. We designed a method of data collection for the WWAMI Initiative that enables them to collect clean, extensive information for an ever growing number of outreach programs. As more organizations provide this information, Waypoint will provide a greater wealth of information.
 
 ![](./steps.png)
 *Creating a robust API for accessing the data collected allows future teams to utilize its potential to the fullest*
 
-Waypoint was built on the premise that good tools rely on good data. Knowing that organizational needs change, we made the database that houses all of the information we've gathered available as its own tool. Through our partner Seattle Data for Good, all of the details of this project and instructions for using the data derived from it will be made available to an entire community of innovators who will continue to help the WWAMI Initiative acheive its goal of eliminating the shortage of physicians in areas of need.
+Waypoint was built on the premise that good tools rely on good data. Knowing that organizational needs change, we made the database that houses all of the information we've gathered available as its own tool. Through our partner Seattle Data for Good, all of the details of this project and instructions for using the data derived from it will be made available to an entire community of innovators who will continue to help the WWAMI Initiative achieve its goal of eliminating the shortage of physicians in areas of need.
+
+
+## My Part
+Well that sounds cool and all, but you might be thinking "What exactly did you do, Nathan?"
 
 ![](./roadmap.png)
-*Illuminating the path between the dreams of today and the healthcare of tommorow*
+*Illuminating the path between the dreams of today and the healthcare of tomorrow*
 
 Created by: Nathan Foster, Andrew Kan, Govind Pillai and Jon Shilling
 

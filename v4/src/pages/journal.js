@@ -39,7 +39,10 @@ const PostItem = styled.div`
 
 export const listQuery = graphql`
   query ListQuery {
-    allMarkdownRemark(filter: { fields: {collection: { eq: "journal" }}}) {
+    allMarkdownRemark(
+        filter: { fields: {collection: { eq: "journal" }}}
+        sort: {fields: [frontmatter___date], order: DESC }
+      ) {
       edges {
         node {
           excerpt(pruneLength: 250)
