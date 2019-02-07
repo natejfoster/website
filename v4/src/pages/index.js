@@ -24,13 +24,13 @@ const IndexPage = (props) => (
         <ImageCard text='Photography' url='/photography' />
         <Img fluid={props.data.imagePhotography.childImageSharp.fluid} style={imageStyle} />
       </ImageWrapper>
-      <ImageWrapper className='projects'>
-        <ImageCard text='Projects' url='/projects' />
-        <Img fluid={props.data.imageProjects.childImageSharp.fluid} style={imageStyle} />
-      </ImageWrapper>
       <ImageWrapper className='journal'>
         <ImageCard text='Journal' url='/journal' />
         <Img fluid={props.data.imageJournal.childImageSharp.fluid} style={imageStyle} />
+      </ImageWrapper>
+      <ImageWrapper className='projects'>
+        <ImageCard text='Projects' url='/projects' />
+        <Img fluid={props.data.imageProjects.childImageSharp.fluid} style={imageStyle} />
       </ImageWrapper>
     </div>
     <Footer />
@@ -53,7 +53,7 @@ export const pageQuery = graphql`
     imageJournal: file(relativePath: { eq: "IMG_4632.jpg" }) {
       ...fluidImage
     }
-    imageProjects: file(relativePath: { eq: "IMG_4893.jpg" }) {
+    imageProjects: file(relativePath: { eq: "IMG_5655.jpg" }) {
       ...fluidImage
     }
   }

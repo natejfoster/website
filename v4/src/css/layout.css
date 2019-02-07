@@ -46,12 +46,12 @@ h2.splashText {
   grid-row: 3;
 }
 
-.projects {
+.journal {
   grid-column: 1 / 3;
   grid-row: 4;
 }
 
-.journal {
+.projects {
   grid-column: 1 / 3;
   grid-row: 5;
 }
@@ -79,12 +79,12 @@ h2.splashText {
     grid-row: 2;
   }
 
-  .projects {
+  .journal {
     grid-column: 1;
     grid-row: 3;
   }
 
-  .journal {
+  .projects {
     grid-column: 2;
     grid-row: 3;
   }

@@ -1,5 +1,5 @@
 ---
-title: "Internet Repository"
+title: "Myself Online"
 path: "/projects/myself-online"
 date: '2019-01-16'
 featuredImage: './website-v4.png'
@@ -56,7 +56,7 @@ When I started v1, I had this grand idea of doing all the configuration and setu
 
 In interest of removing the procrastination temptation, I decided to switch to using Create React App which would do the configuration for me, allowing me to focus on the code and get my website refresh out of dev. I quickly ported the old homepage layout into a react component, and set off on implementing the individual components that would build up the site.
 
-![](./hover-change.jpg)
+![](./hover-change.png)
 *There was an idea...*
 
 I started this whole project with this vision of the homepage and initial navigation being completely image based. Being a photographer, I figured showcasing my work from the very root of the site was the way to go. Seemed easy enough as well: have an `<a>` tag fill the assigned grid space, set its background as an image, a sprinkle of CSS and should be good to go.
