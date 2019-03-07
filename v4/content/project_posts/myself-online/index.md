@@ -119,7 +119,7 @@ Something of this nature isn't really something you can ever say is done. The li
 - Child route maintains active parent route in header 
 - Add GitHub, Insta, and contact links in the footer
 - Add comments
-- Post read time
+- ~~Post read time~~
 - Share links
 - Like post? (gotta get that dopamine fix)
 - Grid layout for journal and project posts on larger screens?
